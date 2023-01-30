@@ -1,0 +1,11 @@
+ul,li { 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+ 
+  .select-list + .select-list {
+      display: flex;
+      padding-top: 46px;
+  }
+

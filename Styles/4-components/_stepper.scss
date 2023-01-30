@@ -1,0 +1,36 @@
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 553px;
+   
+
+    .stepper-item {
+        --steeper-dot-background: #5F6063;
+
+        position: relative;
+        
+        &.is-active {
+            --steeper-dot-background:#9C3E32;
+  
+        }
+
+    }
+    
+    .stepper-dot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--steeper-dot-background);
+    }
+    
+    .stepper-line{
+        width: 268px;
+        background: var(--steeper-dot-background);
+        content: "";
+        position: absolute;
+        height: 2px;
+        top: 7px;
+        right: 50%;
+        z-index: -1;
+    }
+}

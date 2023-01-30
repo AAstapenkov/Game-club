@@ -1,0 +1,101 @@
+$margins: 1, 2, 3, 4;
+@each $margin in $margins {
+    .mt-#{$margin} {
+        margin-top:$margin * 1rem;
+    }
+}
+
+$margins: 1 1rem, 2 2rem, 3 3rem, 4 4rem;
+@each $key, $value in $margins {
+    .mt-#{$key} {
+        margin-top:$value;
+    }
+}
+
+
+$margins: 1 1rem, 2 2rem, 3 3rem, 4 4rem;
+@each $key, $value in $margins {
+    .mt-#{$key} {
+        margin-top:$value;
+    }
+
+    .mr-#{$key} {
+        margin-top:$value;
+    }
+    
+     .mb-#{$key} {
+        margin-top:$value;
+    }
+    
+     .ml-#{$key} {
+        margin-top:$value;
+    }
+}
+
+
+$margins: 1, 2, 3, 4;
+@each $margin in $margins {
+    .mt-#{$margin} {
+        margin-top:#{$margin}rem;
+    }
+
+     .mr-#{$margin} {
+        margin-right:#{$margin}rem;
+    }
+
+     .mb-#{$margin} {
+        margin-bottom:#{$margin}rem;
+    }
+
+     .ml-#{$margin} {
+        margin-left:#{$margin}rem;
+    }
+}
+
+
+
+
+
+
+
+    %message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+    %equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}
+
+
+
+
+
+.print-only {
+    display: none;
+  
+    @media print { display: block; }
+  }
+  
+  

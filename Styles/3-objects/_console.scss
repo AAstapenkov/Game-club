@@ -1,0 +1,13 @@
+.console {
+    display: grid;
+    margin: var(--section-margin);
+    max-width: 553px;
+    padding: 75px 0 94px 0;
+
+    h2 {
+        margin: 0 auto;
+        font-weight: 100;
+        font-size: 48px;
+        padding-bottom: 50px;
+    }
+}
